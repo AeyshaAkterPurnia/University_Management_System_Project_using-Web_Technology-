@@ -1,0 +1,95 @@
+body {
+      background-color: #e7e8e8;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      background-color: white;
+      border: 2px solid black;
+      width: 700px;         
+      margin: 20px auto;
+      padding: 14px 40px;   /* reduced padding to shrink height */
+      box-sizing: border-box;
+    }
+
+    /* header layout: logo left + text right */
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;  /* slightly smaller */
+    }
+    .header img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .header .title {
+      flex: 1;
+    }
+    .header .title p {
+      font-size: 24px;
+      margin: 5px 10px 8px 18px;
+      font-weight: bold;
+    }
+    .leader {
+      color: gray;
+      font-size: 17px;
+      margin: 5px 17px 8px 18px;
+    }
+
+    /* form rows */
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;  /* reduced */
+    }
+    .form-row label {
+      width: 180px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="password"],
+    .form-row input[type="date"] {
+      flex: 1;
+      padding: 9px;         /* slightly smaller */
+      font-size: 15px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+
+    /* gender row */
+    .gender-options {
+      flex: 1;
+      display: flex;
+      gap: 15px;
+      font-size: 15px;
+    }
+    .gender-options label {
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    /* buttons */
+    #signUp {
+      width: 100%;
+      padding: 13px;        /* reduced */
+      background-color: rgb(75, 75, 155);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 6px;
+    }
+    #signUp:hover {
+      background-color: rgb(55, 55, 135);
+    }
+
+    .login-link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;    /* reduced */
+      color: skyblue;
+      text-decoration: none;
+      font-size: 14px;
+    }
